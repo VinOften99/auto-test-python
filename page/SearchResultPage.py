@@ -23,3 +23,5 @@ class SearchResultPage:
         results_container = self.driver.find_element(By.XPATH, '//div[@class="col-md-12 col-sm-12 padding-right0"]')
         result_items = results_container.find_elements(By.XPATH, '//div[@class="row padding-topbot5"]')
         return len(result_items)
+
+
